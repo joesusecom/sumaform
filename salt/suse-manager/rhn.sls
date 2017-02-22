@@ -3,6 +3,15 @@
 include:
   - suse-manager
 
+{% if '2.1' not in grains['version'] %}
+incomplete-package-import-reposync:
+  file.append:
+    - name: /etc/rhn/rhn.conf
+    - text: incomplete_package_import = 1
+    - require:
+      - sls: suse-manager
+{% endif %}
+
 {% if 'stable' not in grains['version'] %}
 
 browser-side-less-configuration:

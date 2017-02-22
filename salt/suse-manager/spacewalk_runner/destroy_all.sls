@@ -1,15 +1,15 @@
 delete_keys:
   salt.runner:
     - name: spacewalk.deleteAllActivationKeys
-    - server: manager.su.se
+    - server: suma3pg.tf.local
 
 delete_groups:
   salt.runner:
     - name: spacewalk.deleteAllGroups
-    - server: manager.su.se
+    - server: suma3pg.tf.local
 
 delete_systems:
   salt.runner:
     - name: spacewalk.deleteAllSystems
-    - server: manager.su.se
+    - server: suma3pg.tf.local
 

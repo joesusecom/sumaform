@@ -16,7 +16,7 @@ create_activation_key_{{ group_name }}:
     - arguments:
       - {{ group_name.replace(" ","-") }}
       - "{{ group.description }}"
-      - sle12-sp1-sap-pool-x86_64
+      - ""
       - []
       - False
 add_groups_to_key_{{ group_name }}:

@@ -8,10 +8,7 @@ include:
   - suse-manager.rhn
   - suse-manager.iss
   - suse-manager.testsuite
-<<<<<<< HEAD
   - suse-manager.spacewalk_runner
-=======
->>>>>>> c177bdc13b6402e0cb21f2da11f8536ad89e0949
 
 {% if '2.1' in grains['version'] %}
 # remove SLES product release package, it's replaced by SUSE Manager's

@@ -1,0 +1,8 @@
+web:
+  description: 'Web Servers'
+
+ftp:
+  description: 'FTP Servers'
+
+db:
+  description: 'Database Servers'
